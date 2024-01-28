@@ -4,7 +4,6 @@ const path = require("path");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const login_credentials = require("/Users/thesohamghadge/INERITANCE01/login_backend/models/loginModel.js");
-const { send } = require("process");
 
 const port = 3000;
 const app = express();
@@ -34,6 +33,11 @@ mongoose
 //using ejs as view engine
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+
+//landingpage
+app.get('/', (req,res)=>{
+    res.render("landingpage")
+})
 
 app.get("/login", (req, res) => {
   res.render("login");

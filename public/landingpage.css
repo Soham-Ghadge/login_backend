@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(https://p.productioncrate.com/stock-hd/effects/footagecrate-4k-looping-network-tech-background-purple-1-prev-full.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+nav{
+    background-size:cover ;
+    background-image: url(https://p.productioncrate.com/stock-hd/effects/footagecrate-4k-looping-network-tech-background-purple-1-prev-full.png);
+    box-shadow: 3px 3px 5px white;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #3405a3;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.menu-button{
+    display: flex;
+}
+
