@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors= require("cors")
 const path = require("path");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
@@ -45,6 +46,9 @@ app.get("/login", (req, res) => {
 app.get("/signup", (req, res) => {
   res.render("signup");
 });
+app.get("/cryptocurrencies",(req,res)=>{
+  res.render("cryptocurrencies")
+})
 
 //register user
 //register user
